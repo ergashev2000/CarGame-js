@@ -6,12 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="container">
-        <img src="./images/car.png" class="carImg">
+        <button type="button" onclick="start()" class="btn">Start</button>
+        <span class="do"></span>
+
+        <div class="keyboard">
+            <h4 style="color: red">Klavyaturadan shu tugmalarni bosing!</h4>
+            <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
+            <div class="keys">
+                <span class="key1"><i class="fa-solid fa-arrow-left"></i></span>
+                <span class="key2"><i class="fa-sharp fa-solid fa-arrow-down"></i></span>
+                <span class="key3"><i class="fa-sharp fa-solid fa-arrow-right"></i></span>
+            </div>
+        </div>
+        <div class="modal">
+            <h2 style="color: red; padding-bottom: 40px;" class="text"></h2>
+            <a href="index.html" class="restart">Yana o'ynash</a>
+        </div>
+        <img src="./images/car.png" class="carImg"> 
         <img src="./images/car2.png" class="carImg2">
     </div>
 

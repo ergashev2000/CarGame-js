@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .container{
     background: url(../images/road.jpg);
     background-repeat: no-repeat;
@@ -26,4 +27,97 @@
     top: 75%;
     z-index: 999;
     width: 300px;
+    transition: all 14s ease-in-out;
+}
+.btn{
+    position: absolute;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    left: 46%;
+    top: 270px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.btn:hover{
+    background-color: #000;
+}
+.btn:active{
+    background-color: rgba(133, 131, 131, 0.994);
+}
+
+
+.keyboard{
+    position: absolute;
+    transform: translateX(0%);
+    width: 100vw;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.keyboard span{
+    background-color: rgba(181, 179, 179, 0.228);
+}
+.up{
+    width: fit-content;
+    padding: 5px 25px;
+    border: 2px solid #000;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 10px;
+    
+}
+.key1{
+    padding: 5px 25px;
+    border: 2px solid #000;
+    border-radius: 20px 0px 0 20px ;
+}
+.key2{
+    padding: 5px 25px;
+    border: 2px solid #000;
+}
+.key3{
+    padding: 5px 25px;
+    border: 2px solid #000;
+    border-radius: 0px 20px 20px 0px ;
+}
+
+.modal{
+
+    background-color: rgb(92, 217, 67);
+    color: #fff;
+    border-radius: 30px;
+    margin:  0 auto;
+    text-align: center;
+    padding: 100px 130px;
+    width: fit-content;
+    z-index: 99999;
+    position: relative;
+    margin-top: 150px;
+    display: none;
+}
+.restart{
+    background-color: blue;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+.do{
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    bottom: 200px;
+    left: 400px;
+    
+    padding: 20px 50px;
+
 }
