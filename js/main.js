@@ -1,5 +1,4 @@
 function start() {
-    setInterval(function () {
 
 
 
@@ -44,7 +43,6 @@ function start() {
         }
         setTimeout(sayHi, 10000);
 
-    }, 3000);
 }
 
 
