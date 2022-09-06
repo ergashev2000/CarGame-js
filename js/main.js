@@ -10,7 +10,7 @@ function start() {
                 let car1 = document.querySelector(".carImg");
                 car1.style.transform = "translateX(" + carOne + "px)";
                 carOne += 10;
-                if (carOne == 1500) {
+                if (carOne == 1400) {
                     var modal = document.querySelector(".modal");
                     modal.style.display = "block";
                     var text = document.querySelector(".text");
@@ -33,7 +33,7 @@ function start() {
         }, true);
 
         let car2 = document.querySelector(".carImg2");
-        car2.style.transform = "translateX(1500px)";
+        car2.style.transform = "translateX(1400px)";
         function sayHi() {
             var modal = document.querySelector(".modal");
             modal.style.display = "block";
